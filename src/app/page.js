@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://chat-next-app-livid.vercel.app");
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
